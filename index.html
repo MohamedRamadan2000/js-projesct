@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{text-align:center;}
+h1{color:orange;}
+button{margin:60px; padding:10px; background-color:orange;}
+</style>
+</head>
+<body>
+<h1>Click To Turn on/off Light</h1>
+<img id="blub" src="off.jpg" width=500px height=300px><br>
+<button onclick="light(1)">Turn ON</button>
+<button onclick="light(0)">Turn OFF</button>
+<script>
+function light(value)
+    {
+     var pic;
+         if(value ==0)
+         { 
+            pic="off.jpg";
+         }
+         else
+         { 
+          pic="on.jpg";
+         }
+         document.getElementById('blub').src=pic;
+    }
+
+</script>
+</body>
+</html>
